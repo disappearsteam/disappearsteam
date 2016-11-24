@@ -5,13 +5,14 @@
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Disappears.com Inc.</title>
-    <meta name="keywords" content="Secure, Messaging, End-to-End Encryption" />
+      <title>Disappears.com Inc.</title>
+    <meta name="keywords" content="HTML5 Template" />
     <meta name="description" content="Encrypted Messaging">
-    <meta name="author" content="disappears.com">
+    <meta name="author" content="vanish.com">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Poppins:300,400,500,600" rel="stylesheet">
     <!-- Favicon -->
+
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Vendor CSS -->
@@ -35,14 +36,66 @@
 
     <!-- Main Container -->
     <div class="web-in">
+
+        <!-- Search Modal -->
+        <div id="search-modal">
+            <img src="img/exit.svg" class="exit" alt="">
+            <form class="search-form" action="post">
+                <label>What are you looking for?</label>
+                <input type="text" placeholder="Your search term here...">
+                <span>Press <b class="primary">enter</b> to confirm search term</span>
+            </form>
+        </div>
+
+        <!-- Start Project Modal -->
+        <div id="modal-bg">
+            <img src="img/exit.svg" class="exit" alt="">
+            <div class="holder">
+                <div class="placer">
+                    <div id="modal" class="center">
+                        <div class="title">
+                            <h5>Start a Project</h5>
+                            <span class="promo-heading">Let's discuss your next project.</span>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 w-section mh"><i class="ion-ios-star-outline"></i>
+                                <h3>Our Service</h3>
+                                <p>Lorem ipsum dolor amet consectetuer adipis.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 w-section mh"><i class="ion-ios-glasses-outline"></i>
+                                <h3>Our Promise</h3>
+                                <p>Lorem ipsum dolor amet consectetuer adipis.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 w-section mh"><i class="ion-ios-filing-outline"></i>
+                                <h3>Your Project</h3>
+                                <p>Lorem ipsum dolor amet consectetuer adipis.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 w-section mh"><i class="ion-ios-person-outline"></i>
+                                <h3>Focus on You</h3>
+                                <p>Lorem ipsum dolor amet consectetuer adipis.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="btn"><span>Give us a call</span></a>
+                        <a href="#" class="btn"><span>Contact Page</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Navigation -->
         <nav id="light" class="transparent start-light border regular">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                       <div class="nav-ui n_">
+                        <div class="nav-ui n_">
                             <div>
-                                <div id="menu-icon"><span></span></div>
+                                <div id="menu-icon" class="menu-icon2"><span></span></div>
                             </div>
                         </div>
                         <div class="logo-holder n_">
@@ -53,7 +106,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="nav-content n_" style="float:right;">
+                        <div class="nav-content nav-content2 n_" style="float:right;">
                             <ul>
                                 <li><a href="vanish.html">Vanish</a></li>
                                 <li><a href="solutions">Solutions</a>
@@ -82,106 +135,46 @@
             </div>
         </nav>
 
-        <header id="app1" class="dark" style="background: #fff;background-size: cover;">
-            <div class="header-in">
-                <div class="container" id="particles-js">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-7 phone mh" style="float: right; height: 760px; text-align:right;">
-                            <div id="videoContainer" style="background:url('img/iphone.png');background-size: contain;/* padding: 28px; */height: 740px;background-repeat: no-repeat;">
-                                <video width="320" height="100%" style="/* margin-top:40px; */padding: 20px; margin-top:-46px;" autoplay loop>
-                                    <source src="video/iphonevideo.mp4" type="video/mp4">
-                                    <source src="video/iphonevideo.ogg" type="video/ogg">
-                                </video>
-                            </div>
-                        </div> 
-                        <div class="col-sm-6 col-md-5 mh" style="height: 760px;">
-                            <div class="caption-holder" style="margin-top:8%;">
-                                <div class="caption" style="transform: translateY(0px); opacity: 1;">
-                                    <h5 style="color:#000;">Introducing</h5>
-                                    <h1>Vanish</h1>
-                                    <h6 style="margin-bottom: 30px;">Messaging how it should have been from the beginning, Vanish the world's most secure and private messenger.</h6>
-                                    <a class="fancybox lead header-link" href="http://vimeo.com" id="watch_video" target="_blank" style="opacity: 1; margin-left: 1; color: #202;">
-                                        <img alt="Play Button" id="play_button" src="https://d2ue93q3u507c2.cloudfront.net/assets/marketing/images/home/play_button%402x.png" data-at2x="https://d2ue93q3u507c2.cloudfront.net/assets/marketing/images/home/play_button%402x.png" width="50" height="40" style="margin-right: 10px;">Watch Video
-                                    </a>
-                                </div>
-                            </div>
-                        </div> 
-                        <img class="mobile-phone" src="img/vanish-secure.png">
+        <!-- Header -->
+        <header id="sp3" class="dark2" style="    background: #000;
+    height: 100%;
+    background-size: cover;" 
+            data-overlay="9">
+            <div class="container">
+                   <div class="row">
+                    <div class="col-md-8" style="    float: none;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;">
+                        <h2 style="text-transform:uppercase; line-height:1.3; font-size:36px;">Vanish for X</h2>
+                        <h6 style="font-size:15px; line-height:1.8;">Vanish provides custom security solutions catered to your business. <br> Interested in hearing more about our solutions contact us. </h6>
+                                                    <a href="mailto:careers@vanish.im" class="btn" style="opacity:1;"><span>Contact us</span></a>
+
                     </div>
-                </div>
+                  <!--    <div class="col-md-6" style="margin-top:16%;"> -->
+                     <!--   <img src="img/logo-banner.svg" class="bm-20" width="40" alt=""> -->
+                       <!--  <h6 style="font-size:14px; line-height:2;">We are a team of extreme professionals, working together to provide the best product for you. No obsticle is too high, nor too low. We take your concept, work with it and produce the best of the best.We are a team of extreme professionals, working together to provide the best product for you. No obsticle is too high, nor too low. We take your concept, work with it and produce the best of the best.We are a team of extreme professionals, working together to provide the best product for you. No obsticle is too high, nor too low. We take your concept, work with it and produce the best of the best.</h6> -->
+<!--                     </div>
+ -->                </div>
             </div>
         </header>
 
-        
-        <section class="dark1" style="margin-top:20px;">
-            <div class="container">
-            <div class="row">
-                <div class="col-md-12" style="text-align:center;">
-                <h5>Latest News</h5>
-                </div>
-            </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="news-item short no-border">
-                            <div class="article-short">
-                               
-                                <a href="http://blog.vanish.im/darpa-is-looking-for-the-perfect-encryption-app-and-its-willing-to-pay/">
-                                    <h3>DARPA is looking for the perfect encryption app and it's willing to pay</h3>
-                                    <p>22.06.16</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- end of news-item -->
-                        <div class="news-item short no-border">
-                            <div class="article-short">
-                        
-                                <a href="http://blog.vanish.im/how-to-make-your-own-nsa-bulk-surveillance-system/">
-                                    <h3>How to make your own NSA bulk surveillance system</h3>
-                                    <p>01.03.16</p>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-6">
-                        <div class="news-item short no-border">
-                            <div class="article-short">
-                           
-                                <a href="http://www.theregister.co.uk/2016/11/14/protonmail_subs_double_after_trump_victory/">
-                                    <h3>Encrypted email sign-ups instantly double in wake of Trump victory</h3>
-                                    <p>14.11.16</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- end of news-item -->
-                        <div class="news-item short no-border">
-                            <div class="article-short">
-                               
-                                <a href="http://gizmodo.com/why-you-should-stop-using-telegram-right-now-1782557415">
-                                    <h3>Why You Should Stop Using Telegram Right Now</h3>
-                                    <p>24.06.16</p>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <!-- end of news-item -->
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
-        <!-- Footer -->
-        <footer id="smart" class="dark1" >
+<footer id="smart" class="dark1" style="    background: linear-gradient(to top, #16222A , #000000);">
             <div class="container">
                 <div class="row foot-space">
                     <div class="col-md-4 col-sm-12">
                         <img src="img/van-logo.png" width="100" alt=""> 
-                        <p>The Disappears.com Inc. management team and group of investors have won multiple awards for building great products. Together, they have a strong track record of growing investor wealth.</p>
+                        <p>The Disappears.com Inc. investors and technology teams have won multiple awards for building great products. Together, they have a strong track record of growing investor wealth.</p>
                         <div class="social">
                             <a href="https://facebook.com/getvanish/"><i class="ion-social-facebook"></i></a>
                             <a href="https://twitter.com/vanishmobile"><i class="ion-social-twitter"></i></a>
                             <a href="https://www.linkedin.com/company/disappears.com-inc."><i class="ion-social-linkedin-outline"></i></a>
+                            <a href="#"><i class="ion-social-github"></i></a>
                         </div>
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -195,9 +188,9 @@
                              <div class="col-md-4 col-sm-4 col-xs-12 spacer">
                                 <h5 class="foot-title">Solutions</h5>
                                 <ul>
-                                    <li><a href="solutions-x.html">Legal and Advisory</a></li>
-                                    <li><a href="solutions-x.html">Finance and Banking</a></li>
-                                    <li><a href="solutions-x.html">Healthcare</a></li>
+                                    <li><a href="solutions-legal.html">Legal and Advisory</a></li>
+                                    <li><a href="solutions-finance.html">Finance and Banking</a></li>
+                                    <li><a href="solutions-healthcare.html">Healthcare</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-12 spacer">
@@ -241,9 +234,7 @@
     <script src="vendor/lightbox/lity.min.js"></script>
     <script src="vendor/tabs/jquery.tabslet.min.js"></script>
     <script src="vendor/masonry.pkgd.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script src="js/particles.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
