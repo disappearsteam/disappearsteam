@@ -112,7 +112,7 @@ $navBg: rgba(11, 19, 43, 0.95); // Used for shading on top of images and element
   }
 }
 .web-in {
-  opacity: 0;
+  opacity: 1;
   transition: 1.7s opacity ease;
 }
 
@@ -859,6 +859,19 @@ p a {
   text-decoration: underline;
 }
 
+
+@media(max-width: 1000px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+@media(max-width: 800px) {
+  .halfarea .imagearea {
+    height: 500px !important;
+  }
+}
+
+
 ul.list li {
   margin: 7px 0;
   font-family: "Lato", sans-serif;
@@ -871,16 +884,30 @@ ul.list2 {
 }
 ul.list2 li {
   margin: 10px 0;
-  font-family: "Lato", sans-serif;
   color: #868A90;
   font-style: italic;
   font-size: 15px;
-  color: #50e3c2;
+}
+
+.font-header {
+  font-size: 40px !important;
+}
+
+@media(max-width: 800px) {
+  .font-header {
+    font-size: 34px !important;
+  }
+}
+
+@media(max-width: 600px) {
+  .font-header {
+    font-size: 30px !important;
+  }
 }
 ul.list2 li::before {
   content: "\f3fe";
   font-family: "Ionicons";
-  color: #50e3c2;
+  color: #868A90;
   font-size: 20px;
   font-style: normal;
   margin-right: 15px;
@@ -3801,11 +3828,21 @@ header#sp3.primary a:hover {
 @media (max-width: 991px) {
   .team-pic {
     height: 310px;
+    width: 310px;
+    float: none;
+    border-radius: 300px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
   .team-pic {
     height: 210px;
+    width: 210px;
+    float: none;
+    border-radius: 300px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 .team-pic .shader {

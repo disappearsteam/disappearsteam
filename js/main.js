@@ -81,9 +81,9 @@
         // --------------------------
         // Fade In on Load
         // --------------------------
-        $(window).on('load', function() {
-            $('.web-in').addClass('fade-in');
-        });
+        // $(window).on('load', function() {
+        //     $('.web-in').addClass('fade-in');
+        // });
 
         // --------------------------
         // Parallax
