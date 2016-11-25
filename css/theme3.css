@@ -166,11 +166,18 @@ html.modal-open {
   bottom: -80px;
   left: 0;
 }
+
+.paddingleftmobile {
+   padding-left:15px;
+}
 @media (max-width: 991px) {
   .container.border::after,
   .container-fluid.border::after,
   .halfarea .border::after {
     bottom: -60px;
+  }
+  .paddingleftmobile {
+     padding-left:15px !important;
   }
 }
 @media (max-width: 767px) {
