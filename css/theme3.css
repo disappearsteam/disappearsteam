@@ -191,7 +191,40 @@ html.modal-open {
 .halfarea .border::after {
   bottom: 0;
 }
-
+#hero-word-switcher.in strong.active {
+-webkit-animation: enter-word 300ms 100ms cubic-bezier(0.215,0.61,0.355,1);
+-moz-animation: enter-word 300ms 100ms cubic-bezier(0.215,0.61,0.355,1);
+animation: enter-word 300ms 100ms cubic-bezier(0.215,0.61,0.355,1);
+}
+#hero-word-switcher strong.active {
+visibility: visible;
+}
+#hero-word-switcher {
+position: relative;
+display: inline-block;
+vertical-align: top;
+-webkit-transition: width 400ms cubic-bezier(0.215,0.61,0.355,1);
+-moz-transition: width 400ms cubic-bezier(0.215,0.61,0.355,1);
+-ms-transition: width 400ms cubic-bezier(0.215,0.61,0.355,1);
+transition: width 400ms cubic-bezier(0.215,0.61,0.355,1);
+white-space: nowrap;
+margin-right: -5px;
+}
+#hero-word-switcher.in strong {
+-webkit-animation: leave-word 300ms cubic-bezier(0.215,0.61,0.355,1);
+-webkit-transform-origin: center 35px;
+-moz-animation: leave-word 300ms cubic-bezier(0.215,0.61,0.355,1);
+-moz-transform-origin: center 35px;
+transform-origin: center 35px;
+}
+#hero-word-switcher strong {
+visibility: hidden;
+position: absolute;
+left: 0;
+}
+strong {
+font-weight: bold;
+}
 .dark1 .container.border::after,
 .dark1 .container-fluid.border::after,
 .dark2 .container.border::after,

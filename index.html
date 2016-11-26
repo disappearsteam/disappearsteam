@@ -26,6 +26,7 @@
     <!-- Theme CSS -->
     <link id="theme" rel="stylesheet" href="css/theme3.css">
     <script src="vendor/modernizr.js"></script>
+
 </head>
 
 <body>
@@ -100,8 +101,15 @@
                             <div class="caption-holder" style="margin-top:8%;">
                                 <div class="caption" style="transform: translateY(0px); opacity: 1;">
                                     <h5 style="color:#000;">Introducing</h5>
-                                    <h1>Vanish</h1>
-                                    <h6 style="margin-bottom: 30px;">Messaging how it should have been from the beginning, Vanish the world's most secure and private messenger.</h6>
+                                    <span id="hero-word-switcher" style="width: 183px;" class="in">
+                                        <strong class="active" data-oid="0" data-width="250"><h1 style="margin-top:-8px;">Vanish</h1></strong>
+                                        <strong data-oid="1" data-width="250" class=""><h1 style="margin-top:-8px;">Secure</h1></strong>
+                                        <strong data-oid="2" data-width="250"><h1 style="margin-top:-8px;">Encrypted</h1></strong>
+                                        <strong data-oid="3" data-width="250"><h1 style="margin-top:-8px;">Privacy Aware</h1></strong>
+                                        <strong data-oid="4" data-width="250"><h1 style="margin-top:-8px;">Messaging</h1></strong>
+
+                                    </span>
+                                    <h6 style="margin-bottom: 30px; margin-top:30px;">Messaging how it should have been from the beginning, Vanish the world's most secure and private messenger.</h6>
                                     <a class="fancybox lead header-link" href="http://vimeo.com" id="watch_video" target="_blank" style="opacity: 1; margin-left: 1; color: #202;">
                                         <img alt="Play Button" id="play_button" src="https://d2ue93q3u507c2.cloudfront.net/assets/marketing/images/home/play_button%402x.png" data-at2x="https://d2ue93q3u507c2.cloudfront.net/assets/marketing/images/home/play_button%402x.png" width="50" height="40" style="margin-right: 10px;">Watch Video
                                     </a>
@@ -124,7 +132,18 @@
             </div>
                 <div class="row">
                     <div class="col-md-6">
-              <div class="news-item short no-border">
+                        <!-- end of news-item -->
+                        <div class="news-item short no-border">
+                            <div class="article-short">
+                               
+                                <a href="http://www.dailymail.co.uk/wires/ap/article-3973396/Sweeping-UK-spy-bill-dubbed-snoopers-charter-law.html">
+                                    <h3>Sweeping UK spy bill dubbed 'snoopers' charter' becomes law</h3>
+                                    <p>26.11.16</p>
+                                </a>
+                            </div>
+                        </div>
+                      
+                        <div class="news-item short no-border">
                             <div class="article-short">
                            
                                 <a href="http://www.theregister.co.uk/2016/11/14/protonmail_subs_double_after_trump_victory/">
@@ -133,6 +152,22 @@
                                 </a>
                             </div>
                         </div>
+
+                
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="news-item short no-border">
+                            <div class="article-short">
+                           
+                                <a href="http://www.ibtimes.co.uk/trumps-cia-director-pick-views-using-encryption-red-flag-had-called-snowdens-execution-1592390">
+                                    <h3>Trump's pick for CIA director views encryption 'a red flag' and wanted Snowden executed</h3>
+                                    <p>19.11.16</p>
+                                </a>
+                            </div>
+                        </div>
+
                         <!-- end of news-item -->
                         <div class="news-item short no-border">
                             <div class="article-short">
@@ -157,7 +192,12 @@
                                 </a>
                             </div>
                         </div>
-                          <!-- end of news-item -->
+                   
+                        
+                        <!-- end of news-item -->
+                    </div>
+                    <div class="col-md-6">
+                           <!-- end of news-item -->
                         <div class="news-item short no-border">
                             <div class="article-short">
                         
@@ -167,8 +207,6 @@
                                 </a>
                             </div>
                         </div>
-                        
-                        <!-- end of news-item -->
                     </div>
                 </div>
             </div>
@@ -245,6 +283,51 @@
     <script src="vendor/lightbox/lity.min.js"></script>
     <script src="vendor/tabs/jquery.tabslet.min.js"></script>
     <script src="vendor/masonry.pkgd.min.js"></script>
+        <script type="text/javascript">
+
+$(function() {
+
+    // Hero word switcher
+
+    var switcher = $('#hero-word-switcher');
+    var delay = 2000;
+    var count = switcher.find('strong').length;
+
+    function calculateWidths() {
+        switcher.find('strong').each(function(index) {
+            $(this).attr('data-width', $(this).width());
+        });
+        switcher.width(switcher.find('.active').attr('data-width'));
+    }
+    calculateWidths();
+
+    $(window).resize(function() {
+        calculateWidths();
+    });
+
+    function doChange() {
+        var nextItem;
+        var currentItem = parseInt(switcher.find('.active').attr('data-oid'));
+
+        if (currentItem == count - 1) {
+            nextItem = 0;
+        } else {
+            nextItem = currentItem + 1;
+        }
+
+        switcher.addClass('in');
+
+        switcher.find('[data-oid="' + currentItem + '"]').removeClass('active');
+        switcher.find('[data-oid="' + nextItem + '"]').addClass('active');
+
+        switcher.width(switcher.find('[data-oid="' + nextItem + '"]').attr('data-width'));
+        setTimeout(doChange, delay);
+    }
+
+    setTimeout(doChange, delay);
+
+});
+    </script>
     <script src="js/main.min.js"></script>
     <script src="js/particles.js"></script>
 
