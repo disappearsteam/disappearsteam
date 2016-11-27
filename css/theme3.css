@@ -1894,6 +1894,7 @@ nav.logo-mid.headroom--not-top .social {
   body.menu-open nav .nav-content ul li a,
   body.menu-open nav#light .nav-content ul li a {
     color: #4B596A !important;
+    opacity: 1 !important;
   }
 }
 .minimal .parent {

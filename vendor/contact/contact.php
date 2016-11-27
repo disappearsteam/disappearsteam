@@ -1,9 +1,9 @@
 <?php
 
 // configure
-$from = 'Demo contact form <demo@domain.com>'; 
-$sendTo = 'Demo contact form <demo@domain.com>';
-$subject = 'New message from contact form';
+$from = 'Contact from Disappears Site form <site@disappears.com>'; 
+$sendTo = 'Contact from Disappears Site form <jaiten@vanish.im>';
+$subject = 'New message from contact form on Disappears Site';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
 $okMessage = '<h4>Contact form successfully submitted. Thank you, we will get back to you soon!</h4>';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
